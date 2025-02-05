@@ -1,0 +1,25 @@
+[project]
+name = "fastapi-test"
+version = "0.1.0"
+description = "A FastAPI project"
+authors = [
+    {name = "badrievad",email = "zzdl4@bk.ru"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.115.6)",
+    "uvicorn (>=0.34.0)",
+    "pydantic[email] (>=2.10.5)",
+    "black (>=24.10.0)",
+    "ruff (>=0.9.1)",
+    "sqlalchemy[async] (>=2.0.37)",
+    "aiosqlite (>=0.20.0)",
+    "pydantic-settings (>=2.7.1)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
