@@ -16,7 +16,8 @@ dependencies = [
     "ruff (>=0.9.1)",
     "sqlalchemy[async] (>=2.0.37)",
     "aiosqlite (>=0.20.0)",
-    "pydantic-settings (>=2.7.1)"
+    "pydantic-settings (>=2.7.1)",
+    "alembic (>=1.14.1,<2.0.0)"
 ]
 
 
