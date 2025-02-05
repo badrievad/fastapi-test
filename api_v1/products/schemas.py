@@ -17,8 +17,8 @@ class ProductSchema(ProductBaseSchema):
 class ProductCreateSchema(ProductBaseSchema):
     pass
 
+
 class ProductUpdateSchema(BaseModel):
     name: str | None = None
     price: float | None = None
     description: str | None = None
-    
