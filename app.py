@@ -5,7 +5,6 @@ from fastapi import FastAPI
 
 from api_v1 import router as router_v1
 from core.config import settings
-from users.views import router as user_router
 
 
 @asynccontextmanager
@@ -14,7 +13,6 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(lifespan=lifespan)
-app.include_router(user_router)
 app.include_router(router_v1, prefix=settings.api_v1_prefix)
 
 
