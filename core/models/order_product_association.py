@@ -22,6 +22,7 @@ class OrderProductAssociation(Base):
     order_id: Mapped[int] = mapped_column(ForeignKey("orders.id"))
     product_id: Mapped[int] = mapped_column(ForeignKey("products.id"))
     count: Mapped[int] = mapped_column(default=1, server_default="1")
+    unit_price: Mapped[float] = mapped_column(default=0.0, server_default="0.0")
 
     order: Mapped["Order"] = relationship(
         "Order",
